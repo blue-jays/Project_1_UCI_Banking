@@ -1,0 +1,55 @@
+# Project Workflow
+- Data Cleaning
+    - Delete the column that has single value
+    - Delete the column that has low variance 
+
+    - Handle duplicate Data
+        - Delete the row that has duplicate value
+
+    - Inconsistent data type.
+        - this is where we look at the types of the data, and how it shouold be each record.
+    
+
+    - Look for missing value, if not , then look for N/A, NaN, 9999, ?. 
+        - ge the type of data in each feature, then we can see how many types shit there are.
+     - Perform imputation
+        - Mean/Media/Mode Imputaion 
+        - Conditional Imputaion
+        - Constant Value Imputaion
+        - Predictive Imputaion
+x
+    -Look for Outliers
+     - DO Box plot to see
+     - Z score Normal Distribution graph, if the data is normally distributed
+        - z = 2, for very small dataset, z = 4 for large dataset
+     - IQR Method, if the data is not normally distributed, after z score failed.
+     - Scatter Plot
+        - For relation between continuos feature
+        - This is called bivariate DATA, x and y, where we think that there might be a relation between them
+          and we know what is the relation between them. So that when we plot, we can see the unusual relation.
+     -Automatic Outlier Detection
+        -LOF, for complex feature
+
+    -Standardize and Normalize data.
+
+    - Featue Engineering
+        -Feteature Selection
+        -Feteature Creation
+    
+    - Encoding
+        -Binary (Multidimensional)
+        -Label
+        -Binary (2d)
+
+    - PCA, if there are too many dimensions.
+        - Mainly after one hot encoding, or any some types of encoding.
+
+
+
+Machine Learning Part 
+- Train test spilt
+
+
+
+- we should look at all the features and their relation with the target feature. 
+- if  the records are unknown, that means it could also be not a missing value. Dont be biased.
